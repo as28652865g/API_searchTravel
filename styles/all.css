@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes line {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+@keyframes line {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
+.wrap {
+  width: 100%;
+  background-color: #F1F1F1;
+  position: relative;
+}
+.wrap .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+}
+.wrap .container .header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrap .container .header .logo {
+  width: 40%;
+}
+.wrap .container .header .logo img {
+  vertical-align: bottom;
+}
+.wrap .container .header .text {
+  width: 40%;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+  color: #F1A509;
+}
+.wrap .container .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: -0.3rem;
+  width: 85%;
+  height: 150px;
+  background-color: #F1A509;
+}
+.wrap .container .title .introduce {
+  text-align: right;
+  width: 50%;
+  font-size: 1.5rem;
+}
+.wrap .container .title .introduce .small {
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.8rem;
+  margin-right: -0.8em;
+}
+.wrap .container .title .selectBar {
+  width: 50%;
+}
+.wrap .container .title .selectBar select {
+  font-size: 1.2em;
+  width: 300px;
+  padding: 0.8rem 0;
+  padding-left: 0.5rem;
+  letter-spacing: 0.3rem;
+  border: none;
+  background-color: #FBE4B6;
+}
+.wrap .container .title .selectBar select:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.wrap .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.wrap .container .content .cityname {
+  padding-top: 2rem;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: #F1A509;
+}
+.wrap .container .content .cityname > h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  width: 200px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #000;
+}
+.wrap .container .content .cards {
+  padding-top: 2rem;
+  width: 1000px;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+}
+.wrap .container .content .cards .item {
+  width: 450px;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+.wrap .container .content .cards .item:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.264) 3px 5px 20px;
+  cursor: pointer;
+}
+.wrap .container .content .cards .item .img {
+  position: relative;
+}
+.wrap .container .content .cards .item .img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.wrap .container .content .cards .item .img:hover::before {
+  opacity: 0;
+}
+.wrap .container .content .cards .item .img::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.wrap .container .content .cards .item .img > img {
+  width: 100%;
+  height: 250px;
+  vertical-align: bottom;
+}
+.wrap .container .content .cards .item .message {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  line-height: 1.8rem;
+}
+.wrap .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #FBE4B6;
+}
+.wrap .footer p {
+  padding: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+.wrap .uparrow {
+  position: fixed;
+  right: 100px;
+  bottom: 35px;
+  -webkit-animation-name: line;
+          animation-name: line;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.wrap .uparrow img {
+  width: 80px;
+  height: 80px;
+}
+.wrap .uparrow img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}/*# sourceMappingURL=all.css.map */
