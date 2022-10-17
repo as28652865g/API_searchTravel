@@ -161,9 +161,6 @@ html, body {
   vertical-align: bottom;
 }
 .wrap .container .content .cards .item .message {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   min-height: 230px;
   background-color: #fff;
   padding: 1rem 1.5rem;
@@ -173,10 +170,11 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 1200px;
   background-color: #FBE4B6;
 }
 .wrap .footer p {
+  display: block;
   padding: 2.5rem;
   text-align: center;
   letter-spacing: 0.1rem;

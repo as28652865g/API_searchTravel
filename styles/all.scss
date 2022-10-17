@@ -156,9 +156,6 @@ html,body{
                         }
                     }
                     .message{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
                         min-height: 230px;
                         background-color: $white;
                         padding: 1rem 1.5rem;
@@ -172,9 +169,10 @@ html,body{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 1200px;
         background-color: $light-orange;
         p{
+            display: block;
             padding: 2.5rem;
             text-align: center;
             letter-spacing: .1rem;
