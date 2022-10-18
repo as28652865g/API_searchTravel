@@ -29,31 +29,31 @@ html, body {
 }
 .wrap {
   width: 100%;
+  margin: 0 auto;
   position: relative;
 }
 .wrap .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 1440px;
+  height: 100%;
   margin: 0 auto;
-  width: 1200px;
 }
 .wrap .container .header {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
+  gap: 40px;
 }
 .wrap .container .header .logo {
-  width: 40%;
+  width: 480px;
 }
 .wrap .container .header .logo img {
   vertical-align: bottom;
 }
 .wrap .container .header .text {
-  width: 40%;
-  padding-left: 1rem;
-  padding-bottom: 1.5rem;
+  width: 480px;
+  padding-bottom: 1rem;
   display: flex;
   align-items: flex-end;
   color: #F1A509;
@@ -62,9 +62,9 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 40px;
   margin-top: -0.3rem;
-  width: 85%;
+  width: 100%;
   height: 150px;
   background-color: #F1A509;
 }
@@ -103,30 +103,30 @@ html, body {
   width: 100%;
 }
 .wrap .container .content .cityname {
-  padding-top: 2rem;
+  padding: 40px 0;
   font-size: 3rem;
   letter-spacing: 0.5rem;
   color: #F1A509;
 }
 .wrap .container .content .cityname > h2 {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 16px;
   text-align: center;
   width: 200px;
   padding-bottom: 1rem;
   border-bottom: 1px solid #000;
 }
 .wrap .container .content .cards {
-  padding-top: 2rem;
-  width: 900px;
-  height: 100%;
+  width: 1000px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 40px;
 }
 .wrap .container .content .cards .item {
-  width: 420px;
-  margin-bottom: 2.5rem;
+  width: 400px;
+  margin-bottom: 40px;
   overflow: hidden;
 }
 .wrap .container .content .cards .item:hover {
@@ -161,29 +161,35 @@ html, body {
   vertical-align: bottom;
 }
 .wrap .container .content .cards .item .message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 230px;
   background-color: #fff;
   padding: 1rem 1.5rem;
-  line-height: 1.8rem;
+  line-height: 32px;
+  font-size: 1.25rem;
 }
 .wrap .footer {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1200px;
+  width: 100%;
   background-color: #FBE4B6;
 }
 .wrap .footer p {
   display: block;
+  font-size: 1.25rem;
   padding: 2.5rem;
   text-align: center;
-  letter-spacing: 0.1rem;
-  font-weight: 600;
+  letter-spacing: 4px;
+  font-weight: 900;
 }
 .wrap .uparrow {
   position: fixed;
-  right: 60px;
-  bottom: 35px;
+  right: 12%;
+  bottom: 40px;
   -webkit-animation-name: line;
           animation-name: line;
   -webkit-animation-duration: 2s;
