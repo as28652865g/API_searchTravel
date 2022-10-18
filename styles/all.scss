@@ -34,7 +34,7 @@ html,body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 1440px;
+        width: 100%;
         height: 100%;
         margin: 0 auto;
         .header{
@@ -44,7 +44,11 @@ html,body{
             .logo{
                 width: 480px;
                 img{
+                    width: 100%;
                     vertical-align: bottom;
+                }
+                @media screen and (max-width: 430px) {
+                    width: 350px;
                 }
             }
             .text{
@@ -54,6 +58,9 @@ html,body{
                 display: flex;
                 align-items: flex-end;
                 color: $orange;
+                @media screen and (max-width: 769px) {
+                    display: none;
+                }
             }
         }
         .title{
@@ -75,9 +82,18 @@ html,body{
                     letter-spacing: .8rem;
                     margin-right: -0.8em;
                 }
+                @media screen and (max-width: 431px) {
+                    display: none;
+                }
             }
             .selectBar{
                 width: 50%;
+                @media screen and (max-width: 431px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                }
                 select{
                     font-size: 1.2em;
                     width: 300px;
@@ -120,10 +136,19 @@ html,body{
                 justify-content: center;
                 flex-wrap: wrap;
                 gap: 40px;
+                @media screen and (max-width: 769px) {
+                    max-width: 768px;
+                }
+                @media screen and (max-width: 431px) {
+                    max-width: 431px;
+                }
                 .item{
                     width: 400px;
                     margin-bottom: 40px;
                     overflow: hidden;
+                    @media screen and (max-width: 769px) {
+                        width: 330px;
+                    }
                     &:hover{
                         transform: scale(1.1);
                         transition: 1s;
@@ -185,11 +210,14 @@ html,body{
             text-align: center;
             letter-spacing: 4px;
             font-weight: 900;
+            @media screen and (max-width: 431px) {
+                font-size: 1rem;
+            }
         }
     }
     .uparrow{
         position: fixed;
-        right: 12%;
+        right: 0%;
         bottom: 40px;
         img{
             width: 80px;
