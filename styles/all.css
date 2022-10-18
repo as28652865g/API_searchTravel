@@ -52,7 +52,12 @@ html, body {
   width: 100%;
   vertical-align: bottom;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 1025px) {
+  .wrap .container .header .logo {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 431px) {
   .wrap .container .header .logo {
     width: 350px;
   }
@@ -159,7 +164,7 @@ html, body {
   }
 }
 .wrap .container .content .cards .item {
-  width: 400px;
+  width: 450px;
   margin-bottom: 40px;
   overflow: hidden;
 }

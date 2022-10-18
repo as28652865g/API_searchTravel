@@ -47,7 +47,10 @@ html,body{
                     width: 100%;
                     vertical-align: bottom;
                 }
-                @media screen and (max-width: 430px) {
+                @media screen and (max-width: 1025px) {
+                    width: 400px;
+                }
+                @media screen and (max-width: 431px) {
                     width: 350px;
                 }
             }
@@ -143,7 +146,7 @@ html,body{
                     max-width: 431px;
                 }
                 .item{
-                    width: 400px;
+                    width: 450px;
                     margin-bottom: 40px;
                     overflow: hidden;
                     @media screen and (max-width: 769px) {
