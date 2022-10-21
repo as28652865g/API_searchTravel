@@ -134,7 +134,7 @@ html,body{
                 }
             }
             .cards{
-                width: 1000px;
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
@@ -146,7 +146,7 @@ html,body{
                     max-width: 431px;
                 }
                 .item{
-                    width: 450px;
+                    width: 400px;
                     margin-bottom: 40px;
                     overflow: hidden;
                     @media screen and (max-width: 769px) {
